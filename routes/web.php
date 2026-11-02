@@ -37,3 +37,7 @@ Route::get('/contact', [ContactController::class, 'getContact'])->name('contact'
 Route::post('/contact', [ContactController::class, 'sendMessage'])
     ->middleware('throttle:5,1')
     ->name('contact.send');
+
+// /admin dan semua turunannya (/admin/login, dst.) diarahkan ke panel dyp-admin
+Route::get('/admin/{any?}', fn () => redirect()->away('https://admin.dianyogyaperdana.com'))
+    ->where('any', '.*');
