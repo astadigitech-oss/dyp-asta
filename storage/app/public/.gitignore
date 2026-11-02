@@ -1,2 +1,27 @@
 *
 !.gitignore
+
+# Aset situs yang dipakai di view (ikut di-commit supaya ada saat deploy, mis. Dokploy).
+# File lain di folder ini sengaja tidak di-commit. Kalau menambah gambar baru di view, daftarkan di sini.
+!bases/
+bases/*
+!bases/Hero.webp
+!bases/benefit1.webp
+!bases/bg1.webp
+!bases/branch.webp
+!bases/fly.webp
+!bases/group.webp
+!bases/hDarsum.webp
+!bases/homeGallery-poster.webp
+!bases/homeGallery.mp4
+!bases/legality.webp
+!bases/logoSingle.webp
+!bases/og-image.jpg
+!bases/shakeHand.webp
+!bases/ttdDarsum.webp
+!bases/world.webp
+
+!main/
+main/*
+!main/bestRequirement.webp
+!main/properCompany.webp
